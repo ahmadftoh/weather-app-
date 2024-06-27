@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/all.min.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>weather app</title>
+</head>
+
+<body>
+  <header class="px-5 py-2">
+    <nav class="navbar navbar-expand-lg ">
+      <div id="thecloudcont" class="container-fluid ">
+        <i id="thecloud" class="fa-solid fa-cloud"></i>
+        <a class="navbar-brand text-white " href="#">Weather</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">news</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contacts</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="panner pt-1 ">
+      <div class="input-group mb-3 mt-5 w-75 ms-auto me-auto">
+        <input id="searchbtn" type="text" class="form-control" placeholder="search by city name" aria-label="search by city name"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2">search</button>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="itemOne">
+              <div class="darkgrey  px-2 py-1 d-flex justify-content-between align-items-center">
+                <span id="theDay"  class="day">
+                  sunday
+
+                </span>
+                <span id="theDate" class="date">
+                  22
+
+                </span>
+
+              </div>
+              <div class="itemOne-content bg-dark text-light px-3 pt-3 pb-2">
+                <span id="cityname">cairo</span>
+                <div class="temp d-flex justify-content-around align-items-center">
+                  <div class="num ">
+                    <p class="d-inline-block" id="temp">31.1</p>
+                  </div>
+                  <div  class="helal">
+                    <img id="dayicon"  src="" alt="">
+                  </div>
+                </div>
+                <div class="itemOne-footer">
+                  <span id="skyCondition" class="skyp-condition ">
+                    clear
+                  </span>
+                  <div class="full-condition mt-2 d-flex justify-content-evenly align-items-center">
+                    <div class="one"> <i class="fa-solid fa-umbrella"></i><span id="humidity">20%</span></div>
+                    <div class="two"><i class="fa-solid fa-wind"></i><span id="windSpeed">18</span><span>km/h</span></div>
+                    <div class="three"> <i class="fa-regular fa-compass"></i><span id="windDirection">east</span></div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="next-day text-center">
+              <div class="next-day-header darkgrey ">
+                <p id="nextDay">tuesday</p>
+              </div>
+              <div class="next-day-main text-white ">
+                <div class="mt-5">
+                  <img id="nextDayIcon" src="" alt="">
+                  <p id="nextHigh" class="mb-2">22</p>
+                  <p id="nextMin" class="mb-2">15</p>
+                  <p id="nextCondition" class="mb-2 text-info">Patchy rain nearby</p>
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="next-day text-center">
+              <div class="next-day-header darkgrey ">
+                <p>tuesday</p>
+              </div>
+              <div class="next-day-main text-white ">
+                <div class="mt-5">
+                  <img  id="thirdDayIcon" src="" alt="">
+                  <p id="thirdHigh" class="mb-2 ">22</p>
+                  <p id="thirdMin" class="mb-2">15</p>
+                  <p id="thirdCondition" class="mb-2 text-info">Patchy rain nearby</p>
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+
+  <footer class="bg-dark pt-1 py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="input-group mt-5 mb-3  ">
+            <input type="text" class="form-control" placeholder="subscribe here" aria-label="subscribe here"
+              aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="second text-info fs-2 fw-light d-flex justify-content-center align-items-center column-gap-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i> 
+            <i class="fa-brands fa-google"></i> 
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+   <p class="text-light ms-5 mt-3 fs-6">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+  </footer>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
